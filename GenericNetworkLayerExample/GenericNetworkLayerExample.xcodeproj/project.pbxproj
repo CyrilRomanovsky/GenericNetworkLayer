@@ -13,6 +13,11 @@
 		10AE4AA024C0F9D900D15C2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AE4A9E24C0F9D900D15C2C /* Main.storyboard */; };
 		10AE4AA224C0F9DB00D15C2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10AE4AA124C0F9DB00D15C2C /* Assets.xcassets */; };
 		10AE4AA524C0F9DB00D15C2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10AE4AA324C0F9DB00D15C2C /* LaunchScreen.storyboard */; };
+		10AE4AAE24C0FAAD00D15C2C /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4AAD24C0FAAD00D15C2C /* NetworkService.swift */; };
+		10AE4AB024C0FABC00D15C2C /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4AAF24C0FABC00D15C2C /* NetworkLayer.swift */; };
+		10AE4AB224C0FAC800D15C2C /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4AB124C0FAC800D15C2C /* URLSession.swift */; };
+		10AE4AB524C0FAD100D15C2C /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4AB324C0FAD000D15C2C /* ErrorModel.swift */; };
+		10AE4AB624C0FAD100D15C2C /* SuccesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4AB424C0FAD100D15C2C /* SuccesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		10AE4AA124C0F9DB00D15C2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10AE4AA424C0F9DB00D15C2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10AE4AA624C0F9DB00D15C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10AE4AAD24C0FAAD00D15C2C /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		10AE4AAF24C0FABC00D15C2C /* NetworkLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		10AE4AB124C0FAC800D15C2C /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
+		10AE4AB324C0FAD000D15C2C /* ErrorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		10AE4AB424C0FAD100D15C2C /* SuccesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuccesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,8 @@
 		10AE4A9724C0F9D900D15C2C /* GenericNetworkLayerExample */ = {
 			isa = PBXGroup;
 			children = (
+				10AE4AB724C0FB5C00D15C2C /* Models */,
+				10AE4AAC24C0FA5400D15C2C /* Network */,
 				10AE4A9824C0F9D900D15C2C /* AppDelegate.swift */,
 				10AE4A9A24C0F9D900D15C2C /* SceneDelegate.swift */,
 				10AE4A9C24C0F9D900D15C2C /* ViewController.swift */,
@@ -65,6 +77,25 @@
 				10AE4AA624C0F9DB00D15C2C /* Info.plist */,
 			);
 			path = GenericNetworkLayerExample;
+			sourceTree = "<group>";
+		};
+		10AE4AAC24C0FA5400D15C2C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				10AE4AAD24C0FAAD00D15C2C /* NetworkService.swift */,
+				10AE4AAF24C0FABC00D15C2C /* NetworkLayer.swift */,
+				10AE4AB124C0FAC800D15C2C /* URLSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		10AE4AB724C0FB5C00D15C2C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				10AE4AB324C0FAD000D15C2C /* ErrorModel.swift */,
+				10AE4AB424C0FAD100D15C2C /* SuccesModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +169,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10AE4AB524C0FAD100D15C2C /* ErrorModel.swift in Sources */,
 				10AE4A9D24C0F9D900D15C2C /* ViewController.swift in Sources */,
 				10AE4A9924C0F9D900D15C2C /* AppDelegate.swift in Sources */,
+				10AE4AB624C0FAD100D15C2C /* SuccesModel.swift in Sources */,
+				10AE4AB224C0FAC800D15C2C /* URLSession.swift in Sources */,
+				10AE4AAE24C0FAAD00D15C2C /* NetworkService.swift in Sources */,
+				10AE4AB024C0FABC00D15C2C /* NetworkLayer.swift in Sources */,
 				10AE4A9B24C0F9D900D15C2C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
