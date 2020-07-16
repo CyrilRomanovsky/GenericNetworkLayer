@@ -40,7 +40,8 @@ class NetworkService {
     func createRequest(
         url: URL?, method: HttpMethod,
         headerType: HttpHeaderType? = nil,
-        headerValue: HttpHeaderValue? = nil
+        headerValue: HttpHeaderValue? = nil,
+        params: [String: Any]? = nil
     ) -> URLRequest? {
         guard let requestUrl = url else {
             debugPrint("request URL is nil")
@@ -48,6 +49,10 @@ class NetworkService {
         }
         var request = URLRequest(url: requestUrl)
         request.httpMethod = method.rawValue
+        if let requestParams = params {
+            let jsonData = try? JSONSerialization.data(withJSONObject: requestParams)
+            request.httpBody = jsonData
+        }
         if let headerType = headerType,
             let headerValue = headerValue {
             request.setValue(headerValue.rawValue, forHTTPHeaderField: headerType.rawValue)

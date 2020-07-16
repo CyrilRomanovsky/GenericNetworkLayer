@@ -12,7 +12,6 @@ class NetworkLayer {
     
     private let networkService = NetworkService()
     
-    
     func request<T: Codable>(url: URL ,completion: @escaping(Result<(model: T?, error: ErrorModel?), Error>) -> Void) {
         guard let request = networkService.createRequest(url: url, method: .get) else { return }
         let decoder = JSONDecoder()
