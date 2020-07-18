@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1094A05024C32717009EF4DC /* HttpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094A04F24C32717009EF4DC /* HttpMethod.swift */; };
+		1094A05224C32730009EF4DC /* HttpHeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094A05124C32730009EF4DC /* HttpHeaderType.swift */; };
+		1094A05424C32762009EF4DC /* HttpHeaderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094A05324C32762009EF4DC /* HttpHeaderValue.swift */; };
+		1094A05624C3776F009EF4DC /* Requets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094A05524C3776F009EF4DC /* Requets.swift */; };
+		1094A05A24C3827B009EF4DC /* AppSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1094A05924C3827B009EF4DC /* AppSetting.swift */; };
 		10AE4A9924C0F9D900D15C2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4A9824C0F9D900D15C2C /* AppDelegate.swift */; };
 		10AE4A9B24C0F9D900D15C2C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4A9A24C0F9D900D15C2C /* SceneDelegate.swift */; };
 		10AE4A9D24C0F9D900D15C2C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10AE4A9C24C0F9D900D15C2C /* ViewController.swift */; };
@@ -21,6 +26,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1094A04F24C32717009EF4DC /* HttpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethod.swift; sourceTree = "<group>"; };
+		1094A05124C32730009EF4DC /* HttpHeaderType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeaderType.swift; sourceTree = "<group>"; };
+		1094A05324C32762009EF4DC /* HttpHeaderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpHeaderValue.swift; sourceTree = "<group>"; };
+		1094A05524C3776F009EF4DC /* Requets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requets.swift; sourceTree = "<group>"; };
+		1094A05924C3827B009EF4DC /* AppSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSetting.swift; sourceTree = "<group>"; };
 		10AE4A9524C0F9D900D15C2C /* GenericNetworkLayerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenericNetworkLayerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10AE4A9824C0F9D900D15C2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10AE4A9A24C0F9D900D15C2C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1094A04E24C3270A009EF4DC /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				1094A04F24C32717009EF4DC /* HttpMethod.swift */,
+				1094A05124C32730009EF4DC /* HttpHeaderType.swift */,
+				1094A05324C32762009EF4DC /* HttpHeaderValue.swift */,
+				1094A05524C3776F009EF4DC /* Requets.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		10AE4A8C24C0F9D900D15C2C = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +96,7 @@
 				10AE4AA124C0F9DB00D15C2C /* Assets.xcassets */,
 				10AE4AA324C0F9DB00D15C2C /* LaunchScreen.storyboard */,
 				10AE4AA624C0F9DB00D15C2C /* Info.plist */,
+				1094A05924C3827B009EF4DC /* AppSetting.swift */,
 			);
 			path = GenericNetworkLayerExample;
 			sourceTree = "<group>";
@@ -82,6 +104,7 @@
 		10AE4AAC24C0FA5400D15C2C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				1094A04E24C3270A009EF4DC /* Enums */,
 				10AE4AAD24C0FAAD00D15C2C /* NetworkService.swift */,
 				10AE4AAF24C0FABC00D15C2C /* NetworkLayer.swift */,
 				10AE4AB124C0FAC800D15C2C /* URLSession.swift */,
@@ -170,11 +193,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				10AE4AB524C0FAD100D15C2C /* ErrorModel.swift in Sources */,
+				1094A05424C32762009EF4DC /* HttpHeaderValue.swift in Sources */,
 				10AE4A9D24C0F9D900D15C2C /* ViewController.swift in Sources */,
 				10AE4A9924C0F9D900D15C2C /* AppDelegate.swift in Sources */,
 				10AE4AB624C0FAD100D15C2C /* SuccesModel.swift in Sources */,
+				1094A05024C32717009EF4DC /* HttpMethod.swift in Sources */,
 				10AE4AB224C0FAC800D15C2C /* URLSession.swift in Sources */,
+				1094A05224C32730009EF4DC /* HttpHeaderType.swift in Sources */,
 				10AE4AAE24C0FAAD00D15C2C /* NetworkService.swift in Sources */,
+				1094A05624C3776F009EF4DC /* Requets.swift in Sources */,
+				1094A05A24C3827B009EF4DC /* AppSetting.swift in Sources */,
 				10AE4AB024C0FABC00D15C2C /* NetworkLayer.swift in Sources */,
 				10AE4A9B24C0F9D900D15C2C /* SceneDelegate.swift in Sources */,
 			);
